@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/processing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:id="@+id/loading"
+        android:max="270"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:indeterminateTint="#8470FF"
+        />
+
+    <TextView
+        android:id="@+id/loadtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Searching Products..."
+        />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+        android:id="@+id/topresult"
+        android:paddingTop="15px"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:textSize="18sp" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swiperefresh_items"
+            android:layout_marginTop="100px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:divider="#FFFF0000"
+            android:dividerHeight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/noresult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Records"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/suspension_bar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@android:color/white">-->
+
+
+<!--        </RelativeLayout>-->
+    </FrameLayout>
+
+</RelativeLayout >

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EbayProject2</string>
+    <string name="error">That didn\'t work!</string>
+    <string name="response">Response is: </string>
+    <string name="title_activity_detailed">DetailedActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="haha">haha</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

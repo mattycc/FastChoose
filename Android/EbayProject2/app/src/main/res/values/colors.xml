@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D97856</color>
+    <color name="colorPrimaryDark">#D97856</color>
+    <color name="colorAccent">#8470FF</color>
+    <color name="tab_normal_color">#F44336</color>
+    <color name="tab_selected_color">#FFEB3B</color>
+    <color name="shopping_icon_color">#8BC34A</color>
+    <color name="app_blue_eBay">#2196F3</color>
+    <color name="ic_launcher_background">#2E67F7</color>
+    <color name="text">#ffffff</color>
+</resources>
